@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Christmas Posting Dates Widget for UK Shops (Royal Mail 2026) · TCH Works</title>
+<meta name="description" content="Free copy-and-paste widget for UK shop websites: a live countdown to Royal Mail's last Christmas 2026 posting dates, with your own order-by dates if you need time to pack. No cookies, no sign-up, no fee.">
+<link rel="canonical" href="https://www.tchworks.co.uk/uk-christmas-posting-dates/">
+<meta property="og:title" content="Free Christmas posting dates widget for UK shops">
+<meta property="og:description" content="A live countdown to Royal Mail's Christmas 2026 last posting dates. Paste two lines into your site.">
+<meta property="og:url" content="https://www.tchworks.co.uk/uk-christmas-posting-dates/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"UK Christmas Posting Dates Widget","url":"https://www.tchworks.co.uk/uk-christmas-posting-dates/","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"publisher":{"@type":"Organization","name":"TCH Works","url":"https://www.tchworks.co.uk/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What are the last Christmas posting dates for 2026?","acceptedAnswer":{"@type":"Answer","text":"Royal Mail lists Friday 18 December for 2nd Class, Saturday 19 December for Tracked 48, Monday 21 December for 1st Class and Tracked 24, and Wednesday 23 December for Special Delivery Guaranteed."}},
+{"@type":"Question","name":"Is the widget free?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is MIT-licensed open source, has no sign-up and no fee, sets no cookies and makes no outside requests."}},
+{"@type":"Question","name":"Can it show my own order-by dates?","acceptedAnswer":{"@type":"Answer","text":"Yes. Set data-dispatch to the number of working days you need to pack an order and the widget counts back from each Royal Mail date, skipping weekends."}},
+{"@type":"Question","name":"Does it work on Shopify, Wix, Squarespace and WordPress?","acceptedAnswer":{"@type":"Answer","text":"Yes. Paste the two lines into a Custom HTML block (WordPress), an Embed or Code block (Squarespace, Wix) or a Custom Liquid section (Shopify)."}}]}</script>
+<style>
+:root{--navy:#0B1C2C;--gold:#C4A35A;--bg:#F7F4EF;--ink:#1A1A1A}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:var(--navy);padding:.9rem 1.25rem}header a{color:var(--gold);font-weight:700;text-decoration:none}
+.wrap{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 3rem}h1,h2{font-family:Georgia,"Times New Roman",serif;color:var(--navy);line-height:1.2}
+h1{font-size:1.9rem;margin:.2rem 0 .6rem}.kicker{color:#8a6d2b;text-transform:uppercase;letter-spacing:.05em;font-size:.8rem;font-weight:700;margin:0}
+.card{background:#fff;border:1px solid #ddd6c8;border-radius:8px;padding:1.25rem;margin:1.25rem 0}
+label{display:block;font-weight:600;font-size:.9rem;color:var(--navy);margin:.85rem 0 .25rem}
+input,select{width:100%;padding:.6rem .65rem;border:1px solid #bbb;border-radius:5px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}@media(max-width:560px){.row{grid-template-columns:1fr}}
+.check{display:flex;gap:.5rem;align-items:center;font-weight:400;color:var(--ink)}.check input{width:auto}
+.hint{font-size:.82rem;color:#555;margin:.2rem 0 0}
+table.d{width:100%;border-collapse:collapse}table.d td{padding:.45rem .3rem;border-bottom:1px solid #eee}
+pre{white-space:pre-wrap;word-break:break-all;background:#f3f1ec;border:1px solid #ddd;padding:.8rem;border-radius:5px;font-size:.85rem}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;padding:.7rem 1.2rem;border-radius:5px;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
+.cta{background:var(--navy);color:#fff;border-radius:8px;padding:1.25rem;margin:1.5rem 0}.cta h2{color:var(--gold);margin-top:0}.cta a.btn{margin:.3rem .4rem .3rem 0}
+footer{font-size:.85rem;color:#555;border-top:1px solid #ddd;margin-top:2rem;padding-top:1rem}footer a{color:var(--navy)}
+</style>
+</head>
+<body>
+<header><a href="https://www.tchworks.co.uk/?src=gh-postdates">TCH Works</a></header>
+<main class="wrap">
+<p class="kicker">Free tool for UK shops · Christmas 2026</p>
+<h1>Free Christmas posting dates widget for your website</h1>
+<p>Every December, shop inboxes fill with "will it arrive by Christmas?". This widget answers it on your own site: a live countdown to Royal Mail's last posting dates, or to your own order-by dates if you need a day or two to pack. Paste two lines. No sign-up, no fee, no cookies.</p>
+
+<div class="row">
+<div>
+<label for="f-dispatch">Working days you need to pack an order</label>
+<select id="f-dispatch"><option value="0">0 (show Royal Mail's own dates)</option><option value="1" selected>1 working day</option><option value="2">2 working days</option><option value="3">3 working days</option><option value="5">5 working days</option></select>
+<label>Services to show</label>
+<label class="check"><input type="checkbox" value="2nd" checked> 2nd Class</label>
+<label class="check"><input type="checkbox" value="tracked48" checked> Tracked 48</label>
+<label class="check"><input type="checkbox" value="1st" checked> 1st Class / Tracked 24</label>
+<label class="check"><input type="checkbox" value="special" checked> Special Delivery</label>
+<label class="check"><input type="checkbox" value="pf48"> Parcelforce express48</label>
+<label class="check"><input type="checkbox" value="pf24"> Parcelforce express24</label>
+<label for="f-accent">Border colour</label>
+<input id="f-accent" type="text" value="#14532D" maxlength="7">
+<label for="f-theme">Background</label>
+<select id="f-theme"><option value="light">Light</option><option value="dark">Dark</option></select>
+<label for="f-msg">Your own line under the dates (optional)</label>
+<input id="f-msg" type="text" maxlength="120" placeholder="e.g. Free gift wrap on every order until 15 December">
+</div>
+<div>
+<label>Live preview</label>
+<div id="preview"></div>
+</div>
+</div>
+
+<div class="card">
+<h2 style="margin-top:0;font-size:1.2rem">Your code to paste</h2>
+<pre id="code"></pre>
+<button class="btn" id="copy" type="button">Copy code</button> <span id="copied" class="hint"></span>
+<p class="hint">WordPress: Custom HTML block. Squarespace: Code block. Wix: Embed code, then Embed HTML. Shopify: Online Store, Customise, add a Custom Liquid section. Prefer to host it yourself? Download <a href="https://github.com/wilsonryan-hue/uk-christmas-posting-dates">posting-dates.js from GitHub</a> (MIT licence).</p>
+</div>
+
+<h2>The dates (Royal Mail, UK to UK)</h2>
+<table class="d">
+<tr><td><b>Friday 18 December</b></td><td>2nd Class, 2nd Class Signed For</td></tr>
+<tr><td><b>Saturday 19 December</b></td><td>Royal Mail Tracked 48</td></tr>
+<tr><td><b>Monday 21 December</b></td><td>1st Class, 1st Class Signed For, Royal Mail Tracked 24</td></tr>
+<tr><td><b>Wednesday 23 December</b></td><td>Special Delivery Guaranteed</td></tr>
+<tr><td><b>Monday 21 December</b></td><td>Parcelforce express48, express48large</td></tr>
+<tr><td><b>Tuesday 22 December</b></td><td>Parcelforce express10, expressAM, express24</td></tr>
+</table>
+<p class="hint">Copied from <a href="https://www.royalmail.com/christmas/last-posting-dates" rel="nofollow">Royal Mail's last posting dates page</a> on 23 October 2026. Royal Mail says the dates are correct at the time of publishing and subject to change. If Royal Mail changes them, we update the hosted file, so sites using the hosted version update by themselves.</p>
+
+<h2>Questions</h2>
+<p><b>How does the order-by date work?</b> Set the packing days and the widget counts back that many working days (Monday to Friday) from each Royal Mail date. With 1 day, 2nd Class becomes "order by Thursday 17 December".</p>
+<p><b>Does it slow my site down?</b> No. It is one 6 KB file with no libraries, no fonts, no cookies and no calls to anyone else.</p>
+<p><b>Can I remove the small credit line?</b> Yes, add <code>data-credit="off"</code>. It's MIT-licensed, so it's yours to use however you like.</p>
+
+<div class="cta">
+<h2>Too late to post? Print a card at home</h2>
+<p>15 original Christmas cards to print at home on A4, folding to A5: Mum, Dad, Nan, Grandad, teacher, colleague, the dog and more. Blank inside or with a printed message. £2.99, instant download.</p>
+<a class="btn" href="https://www.tchworks.co.uk/shop/printable-christmas-cards/?src=gh-postdates">See the printable cards</a>
+<a class="btn" style="background:#fff" href="https://www.tchworks.co.uk/guides/what-to-write-in-a-christmas-card/?src=gh-postdates">61 Christmas card messages</a>
+</div>
+<div class="card">
+<h2 style="margin-top:0;font-size:1.2rem">Need your Christmas emails or product pages written?</h2>
+<p>We write Christmas newsletters and welcome emails (from £35) and product descriptions (10 for £20) for small UK shops, from your own facts. <a href="https://www.tchworks.co.uk/services/newsletters/?src=gh-postdates">Newsletters</a> · <a href="https://www.tchworks.co.uk/services/product-descriptions/?src=gh-postdates">Product descriptions</a></p>
+</div>
+<footer>Made by <a href="https://www.tchworks.co.uk/?src=gh-postdates">TCH Works</a>. Source code on <a href="https://github.com/wilsonryan-hue/uk-christmas-posting-dates">GitHub</a>. Not affiliated with Royal Mail.</footer>
+</main>
+<script src="posting-dates.js"></script>
+<script>
+(function(){
+ var HOST="https://www.tchworks.co.uk/uk-christmas-posting-dates/posting-dates.js";
+ var q=function(s){return document.querySelector(s)},prev=q("#preview"),code=q("#code");
+ function attrs(){
+  var sv=[].slice.call(document.querySelectorAll(".check input:checked")).map(function(x){return x.value});
+  var a={"data-uk-posting-dates":"","data-dispatch":q("#f-dispatch").value,"data-services":sv.join(",")};
+  var acc=q("#f-accent").value.trim();if(/^#[0-9a-fA-F]{3,8}$/.test(acc)&&acc.toUpperCase()!="#14532D")a["data-accent"]=acc;
+  if(q("#f-theme").value=="dark")a["data-theme"]="dark";
+  var m=q("#f-msg").value.trim();if(m)a["data-message"]=m;
+  return a;
+ }
+ function update(){
+  var a=attrs(),el=document.createElement("div");
+  Object.keys(a).forEach(function(k){el.setAttribute(k,a[k])});
+  prev.innerHTML="";prev.appendChild(el);UKPostingDates.render(el);
+  var html='<div '+Object.keys(a).map(function(k){return a[k]===""?k:k+'="'+a[k].replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;")+'"'}).join(" ")+'></div>\n<script src="'+HOST+'" defer><\/script>';
+  code.textContent=html;
+ }
+ document.querySelectorAll("input,select").forEach(function(x){x.addEventListener("input",update);x.addEventListener("change",update)});
+ q("#copy").addEventListener("click",function(){navigator.clipboard&&navigator.clipboard.writeText(code.textContent).then(function(){q("#copied").textContent="Copied."})});
+ update();
+})();
+</script>
+</body>
+</html>
