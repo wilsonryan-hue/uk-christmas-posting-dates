@@ -12,7 +12,7 @@ A free, copy-and-paste countdown to Royal Mail's last Christmas posting dates fo
 
 ## Printables
 
-**Free posting-dates checklist (A4 PDF):** [download the Release](https://github.com/wilsonryan-hue/uk-christmas-posting-dates/releases/tag/v1.0.0-free-printable) — Royal Mail + Parcelforce Christmas 2026 last posting dates, no-service days, blank card/parcel send checklist, and a worked EXAMPLE (Granny's card by 2nd Class → post by Fri 18 Dec).
+**Free posting-dates checklist (A4 PDF):** [download the Release](https://github.com/wilsonryan-hue/uk-christmas-posting-dates/releases/tag/v1.0.0-free-printable) — Royal Mail + Parcelforce Christmas 2026 last posting dates, no-service days, blank card/parcel send checklist, and a worked EXAMPLE (Granny's card by 2nd Class → post by Fri 18 Dec). Also free on [Gumroad](https://tchworks.gumroad.com/l/cqferz?utm_source=github&utm_campaign=postdates-repo).
 
 Missed the post? [Print-at-home Christmas cards](https://www.tchworks.co.uk/shop/printable-christmas-cards/?src=gh-postdates-readme) (£2.99) · [Gumroad](https://tchworks.gumroad.com/l/mkhoe?utm_source=github&utm_campaign=postdates-repo). Free online planner: [christmas-card-posting-dates-2026](https://www.tchworks.co.uk/free/christmas-card-posting-dates-2026/?src=gh-postdates-readme).
 
